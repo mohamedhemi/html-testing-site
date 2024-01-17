@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <style>
+
+body{
+  width: 100%;
+  height: 100vh;
+  
+  align-items: center;
+  justify-content: center;
+  background-size: 300% 300%;
+  background-image: linear-gradient(-45deg, rgb(185, 116, 6) 0%, rgb(201, 156, 41) 25%, rgb(250, 242, 5) 51%, #f05a09 100%);
+  -webkit-animation: AnimateBG 20s ease infinite;
+          animation: AnimateBG 20s ease infinite;
+          flex-direction: column;
+         
+}
+
+
+
+
+
+
+        .ptofile{height:380px;
+		width:400px;
+		border-radius: 10%;
+		
+		margin-bottom: 30px;
+		
+		}
+		.abouttitle{
+			text-align: center;
+			font-family:Georgia, 'Times New Roman', Times, serif ;
+			
+		}
+		.leftbox{
+			align-items: center;
+			justify-content: center;
+
+		}
+		.para{
+			font-size: x-large;
+			margin-top: px;
+		}
+
+		.heads{
+			
+			font-size:xx-large;
+			font-family: Georgia, 'Times New Roman', Times, serif;
+		}
+		.headmain{
+
+font-family: Georgia, 'Times New Roman', Times, serif;
+		}
+		.lets{
+			font-weight: 400;
+		}
+
+		.profileboxb{
+			justify-content: center;
+		}
+
+		.paragraph{
+
+			font-size: x-large;
+		}
+
+
+
+		.demo{ background: #dad9d4; }
+.progress{
+    height: 40px;
+    background: #fff;
+    border-radius: 100px;
+    box-shadow: none;
+    margin-top: 40px;
+    position: relative;
+}
+.progress .progress-title{
+    width: 20%;
+    height: 100%;
+    background: #ffffff;
+    border-radius: 100px 0 0 100px;
+    float: left;
+    margin: 0;
+    font-size: 15px;
+    color: #000;
+    line-height: 40px;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+}
+.progress .progress-title:after{
+    content: "";
+    border-left: 10px solid #ffffff;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    position: absolute;
+    top: 10px;
+    right: -10px;
+    z-index: 1;
+}
+.progress .progress-bar{
+    width: 80%;
+    background: #ffffff;
+    box-shadow: none;
+    position: relative;
+}
+.progress .progress-value{
+    height:100%;
+    border-radius: 0 100px 100px 0;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 40px;
+    color: #ffffff;
+    animation: animate-positive 2s;
+}
+.progress.red .progress-value{ background: #010000; }
+.progress.green .progress-value{ background: #000000; }
+.progress.blue .progress-value{ background: #00070b; }
+.progress.yellow .progress-value{ background: #eea921; }
+@keyframes animate-positive{
+    0%{ width: 0; }
+}
+@media only screen and (max-width: 480px){
+    .progress .progress-title{
+        font-size: 12px;
+        letter-spacing: 0;
+    }
+}
+License Terms
+
+
+
+
+
+
+
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2&display=swap");
+$main-green: #79dd09 !default;
+$main-green-rgb-015: rgba(121, 221, 9, 0.1) !default;
+$main-yellow: #bdbb49 !default;
+$main-yellow-rgb-015: rgba(189, 187, 73, 0.1) !default;
+$main-red: #bd150b !default;
+$main-red-rgb-015: rgba(189, 21, 11, 0.1) !default;
+$main-blue: #0076bd !default;
+$main-blue-rgb-015: rgba(0, 118, 189, 0.1) !default;
+
+/* This pen */
+body {
+	font-family: "Baloo 2", cursive;
+	font-size: 16px;
+	color: #ffffff;
+	text-rendering: optimizeLegibility;
+	font-weight: initial;
+}
+
+.dark {
+	background: #110f16;
+}
+
+
+.light {
+	background: #f3f5f7;
+}
+
+a, a:hover {
+	text-decoration: none;
+	transition: color 0.3s ease-in-out;
+}
+
+#pageHeaderTitle {
+	margin: 2rem 0;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 2.5rem;
+}
+
+/* Cards */
+.postcard {
+  flex-wrap: wrap;
+  display: flex;
+  
+  box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.66);
+  border-radius: 10px;
+  margin: 0 0 2rem 0;
+  overflow: hidden;
+  position: relative;
+  color: #ffffff;
+
+	&.dark {
+		background-color: #18151f;
+	}
+	&.light {
+		background-color: #e1e5ea;
+	}
+	
+	.t-dark {
+		color: #18151f;
+	}
+	
+  a {
+    color: inherit;
+  }
+	
+	h1,	.h1 {
+		margin-bottom: 0.5rem;
+		font-weight: 500;
+		line-height: 1.2;
+	}
+	
+	.small {
+		font-size: 80%;
+	}
+
+  .postcard__title {
+    font-size: 1.75rem;
+  }
+
+  .postcard__img {
+    max-height: 180px;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+  }
+
+  .postcard__img_link {
+    display: contents;
+  }
+
+  .postcard__bar {
+    width: 50px;
+    height: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    background-color: #424242;
+    transition: width 0.2s ease;
+  }
+
+  .postcard__text {
+    padding: 1.5rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .postcard__preview-txt {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: justify;
+    height: 100%;
+  }
+
+  .postcard__tagbox {
+    display: flex;
+    flex-flow: row wrap;
+    font-size: 14px;
+    margin: 20px 0 0 0;
+		padding: 0;
+    justify-content: center;
+
+    .tag__item {
+      display: inline-block;
+      background: rgba(83, 83, 83, 0.4);
+      border-radius: 3px;
+      padding: 2.5px 10px;
+      margin: 0 5px 5px 0;
+      cursor: default;
+      user-select: none;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background: rgba(83, 83, 83, 0.8);
+      }
+    }
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(-70deg, #424242, transparent 50%);
+    opacity: 1;
+    border-radius: 10px;
+  }
+
+  &:hover .postcard__bar {
+    width: 100px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .postcard {
+    flex-wrap: inherit;
+
+    .postcard__title {
+      font-size: 2rem;
+    }
+
+    .postcard__tagbox {
+      justify-content: start;
+    }
+
+    .postcard__img {
+      max-width: 300px;
+      max-height: 100%;
+      transition: transform 0.3s ease;
+    }
+
+    .postcard__text {
+      padding: 3rem;
+      width: 100%;
+    }
+
+    .media.postcard__text:before {
+      content: "";
+      position: absolute;
+      display: block;
+      background: #18151f;
+      top: -20%;
+      height: 130%;
+      width: 55px;
+    }
+
+    &:hover .postcard__img {
+      transform: scale(1.1);
+    }
+
+    &:nth-child(2n+1) {
+      flex-direction: row;
+    }
+
+    &:nth-child(2n+0) {
+      flex-direction: row-reverse;
+    }
+
+    &:nth-child(2n+1) .postcard__text::before {
+      left: -12px !important;
+      transform: rotate(4deg);
+    }
+
+    &:nth-child(2n+0) .postcard__text::before {
+      right: -12px !important;
+      transform: rotate(-4deg);
+    }
+  }
+}
+@media screen and (min-width: 1024px){
+		.postcard__text {
+      padding: 2rem 3.5rem;
+    }
+		
+		.postcard__text:before {
+      content: "";
+      position: absolute;
+      display: block;
+      
+      top: -20%;
+      height: 130%;
+      width: 55px;
+    }
+	
+  .postcard.dark {
+		.postcard__text:before {
+			background: #18151f;
+		}
+  }
+	.postcard.light {
+		.postcard__text:before {
+			background: #e1e5ea;
+		}
+  }
+}
+
+/* COLORS */
+.postcard .postcard__tagbox .green.play:hover {
+	background: $main-green;
+	color: black;
+}
+.green .postcard__title:hover {
+	color: $main-green;
+}
+.green .postcard__bar {
+	background-color: $main-green;
+}
+.green::before {
+	background-image: linear-gradient(
+		-30deg,
+		$main-green-rgb-015,
+		transparent 50%
+	);
+}
+.green:nth-child(2n)::before {
+	background-image: linear-gradient(30deg, $main-green-rgb-015, transparent 50%);
+}
+
+.postcard .postcard__tagbox .blue.play:hover {
+	background: $main-blue;
+}
+.blue .postcard__title:hover {
+	color: $main-blue;
+}
+.blue .postcard__bar {
+	background-color: $main-blue;
+}
+.blue::before {
+	background-image: linear-gradient(-30deg, $main-blue-rgb-015, transparent 50%);
+}
+.blue:nth-child(2n)::before {
+	background-image: linear-gradient(30deg, $main-blue-rgb-015, transparent 50%);
+}
+
+.postcard .postcard__tagbox .red.play:hover {
+	background: $main-red;
+}
+.red .postcard__title:hover {
+	color: $main-red;
+}
+.red .postcard__bar {
+	background-color: $main-red;
+}
+.red::before {
+	background-image: linear-gradient(-30deg, $main-red-rgb-015, transparent 50%);
+}
+.red:nth-child(2n)::before {
+	background-image: linear-gradient(30deg, $main-red-rgb-015, transparent 50%);
+}
+
+.postcard .postcard__tagbox .yellow.play:hover {
+	background: $main-yellow;
+	color: black;
+}
+.yellow .postcard__title:hover {
+	color: $main-yellow;
+}
+.yellow .postcard__bar {
+	background-color: $main-yellow;
+}
+.yellow::before {
+	background-image: linear-gradient(
+		-30deg,
+		$main-yellow-rgb-015,
+		transparent 50%
+	);
+}
+.yellow:nth-child(2n)::before {
+	background-image: linear-gradient(
+		30deg,
+		$main-yellow-rgb-015,
+		transparent 50%
+	);
+}
+
+@media screen and (min-width: 769px) {
+	.green::before {
+		background-image: linear-gradient(
+			-80deg,
+			$main-green-rgb-015,
+			transparent 50%
+		);
+	}
+	.green:nth-child(2n)::before {
+		background-image: linear-gradient(
+			80deg,
+			$main-green-rgb-015,
+			transparent 50%
+		);
+	}
+
+	.blue::before {
+		background-image: linear-gradient(
+			-80deg,
+			$main-blue-rgb-015,
+			transparent 50%
+		);
+	}
+	.blue:nth-child(2n)::before {
+		background-image: linear-gradient(80deg, $main-blue-rgb-015, transparent 50%);
+	}
+
+	.red::before {
+		background-image: linear-gradient(-80deg, $main-red-rgb-015, transparent 50%);
+	}
+	.red:nth-child(2n)::before {
+		background-image: linear-gradient(80deg, $main-red-rgb-015, transparent 50%);
+	}
+	
+	.yellow::before {
+		background-image: linear-gradient(
+			-80deg,
+			$main-yellow-rgb-015,
+			transparent 50%
+		);
+	}
+	.yellow:nth-child(2n)::before {
+		background-image: linear-gradient(
+			80deg,
+			$main-yellow-rgb-015,
+			transparent 50%
+		);
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+
+
+
+
+
+
+
+
+		
+        
+        </style>
+</head>
+<body>
+
+    <section>
+        
+  
+    
+<div class="position-relative overflow-hidden">
+	<div class="d-flex min-vh-100" lc-helper="video-bg">
+		<video style="z-index:1;object-fit: cover; object-position: 50% 50%;" class="position-absolute w-100 min-vh-100" autoplay="" preload="" muted="" loop="" playsinline="">
+			<!-- adjust object-position to tweak cropping on mobile -->
+			<source src="./assets/lamba.mp4" type="video/mp4">
+		</video>
+		<div style="z-index:2 ;" class="align-self-center text-center text-ligh  col-md-8 offset-md-2">
+			<div class="lc-block mb-4">
+				<div editable="rich">
+					<h1 class="display-3 fw-bolder headmain"style=color:orange>MOHAMED HEMI</h1>
+				</div>
+			</div>
+
+			<div class="lc-block">
+				<div editable="rich">
+					<p class="lead display-5 fw-bolder"style=color:black>Web development & design</p>
+
+					<p class="lead display-5 lets" style=color:black>Lets make somthing special.
+
+					</p>
+
+				</div>
+			</div>
+
+			<div class="lc-block">
+				<svg onclick="this.closest('section').nextElementSibling.scrollIntoView({ behavior: 'smooth'  });" width="4em" height="4em" viewBox="0 0 16 16" lc-helper="svg-icon" fill="currentColor" xmlns="http://www.w3.org/2000/svg" style="color:orange">
+					<path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+					<path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"></path>
+				</svg>
+
+				<!-- for Safari support only, remove if you want  -->
+				
+			</div>
+		</div>
+	</div>
+</div>
+ 
+ 
+  
+
+    </section>
+
+	<section class="about">
+
+		<div class="container px-4 py-5 abouttitle">
+			<h2 class="pb-2 border-botto display-3">About</h2>
+		
+			<div class="row row-cols-1 row-cols-md-2 align-items-md-center align-items-lg-center g-5 py-5">
+			  <div class="col d-flex flex-column align-items-center gap-2 leftbox profilebox">
+				<img src="./assets/pic.JPG" alt="profilepic"class="ptofile">
+				<p class="text-body-secondar para"style=color:BLACK>I am  a passionate Full-stack developer based in Zagreb, Croatia, bringing you web development and design from the future. My expertise is developing next-level websites and applications.</p>
+				
+			  </div>
+		
+			  <div class="col">
+				<div class="row row-cols-1 row-cols-sm-2 g-4">
+				  <div class="col d-flex flex-column gap-2">
+					<div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-dark bg-gradient fs-4 rounded-3">
+						<svg xmlns="http://www.w3.org/2000/svg" width="50" height="80" fill="currentColor" class="bi bi-speedometer2" viewBox="0 0 16 16"style=color:white>
+							<path d="M8 4a.5.5 0 0 1 .5.5V6a.5.5 0 0 1-1 0V4.5A.5.5 0 0 1 8 4M3.732 5.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707M2 10a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 10m9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5m.754-4.246a.39.39 0 0 0-.527-.02L7.547 9.31a.91.91 0 1 0 1.302 1.258l3.434-4.297a.39.39 0 0 0-.029-.518z"/>
+							<path fill-rule="evenodd" d="M0 10a8 8 0 1 1 15.547 2.661c-.442 1.253-1.845 1.602-2.932 1.25C11.309 13.488 9.475 13 8 13c-1.474 0-3.31.488-4.615.911-1.087.352-2.49.003-2.932-1.25A8 8 0 0 1 0 10m8-7a7 7 0 0 0-6.603 9.329c.203.575.923.876 1.68.63C4.397 12.533 6.358 12 8 12s3.604.532 4.923.96c.757.245 1.477-.056 1.68-.631A7 7 0 0 0 8 3"/>
+						  </svg>
+					</div>
+					<h4 class="fw-semibold mb-0 text-body-emphasi heads"style=color:blac>Fast</h4>
+					<p class="text-body-secondar para "style=color:white>Fast load times and lag free interaction, my highest priority.</p>
+				  </div>
+		
+				  <div class="col d-flex flex-column gap-2">
+					<div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-dark bg-gradient fs-4 rounded-3">
+						<svg xmlns="http://www.w3.org/2000/svg" width="50" height="80" fill="currentColor" class="bi bi-phone-flip" viewBox="0 0 16 16"style=color:white>
+							<path fill-rule="evenodd" d="M11 1H5a1 1 0 0 0-1 1v6a.5.5 0 0 1-1 0V2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v6a.5.5 0 0 1-1 0V2a1 1 0 0 0-1-1m1 13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-2a.5.5 0 0 0-1 0v2a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-2a.5.5 0 0 0-1 0zM1.713 7.954a.5.5 0 1 0-.419-.908c-.347.16-.654.348-.882.57C.184 7.842 0 8.139 0 8.5c0 .546.408.94.823 1.201.44.278 1.043.51 1.745.696C3.978 10.773 5.898 11 8 11q.148 0 .294-.002l-1.148 1.148a.5.5 0 0 0 .708.708l2-2a.5.5 0 0 0 0-.708l-2-2a.5.5 0 1 0-.708.708l1.145 1.144L8 10c-2.04 0-3.87-.221-5.174-.569-.656-.175-1.151-.374-1.47-.575C1.012 8.639 1 8.506 1 8.5c0-.003 0-.059.112-.17.115-.112.31-.242.6-.376Zm12.993-.908a.5.5 0 0 0-.419.908c.292.134.486.264.6.377.113.11.113.166.113.169s0 .065-.13.187c-.132.122-.352.26-.677.4-.645.28-1.596.523-2.763.687a.5.5 0 0 0 .14.99c1.212-.17 2.26-.43 3.02-.758.38-.164.713-.357.96-.587.246-.229.45-.537.45-.919 0-.362-.184-.66-.412-.883s-.535-.411-.882-.571M7.5 2a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1z"/>
+						  </svg>
+					</div>
+					<h4 class="fw-semibold mb-0 text-body-emphasi heads"style=color:black>Responsive</h4>
+					<p class="text-body-secondar para"style=color:white>My layouts will work on any device, big or small.</p>
+				  </div>
+		
+				  <div class="col d-flex flex-column gap-2">
+					<div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-dark bg-gradient fs-4 rounded-3">
+						<svg xmlns="http://www.w3.org/2000/svg" width="50" height="80" fill="currentColor" class="bi bi-lightbulb-fill" viewBox="0 0 16 16"style=color:white >
+							<path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13h-5a.5.5 0 0 1-.46-.302l-.761-1.77a2 2 0 0 0-.453-.618A5.98 5.98 0 0 1 2 6m3 8.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1-.5-.5"/>
+						  </svg>
+					</div>
+					<h4 class="fw-semibold mb-0 text-body-emphasi heads"style=color:black>Intuitive</h4>
+					<p class="text-body-secondar para"style=color:white>Strong preference for easy to use, intuitive UX/UI.</p>
+				  </div>
+		
+				  <div class="col d-flex flex-column gap-2">
+					<div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-dark bg-gradient fs-4 rounded-3">
+						<svg xmlns="http://www.w3.org/2000/svg" width="50" height="80" fill="currentColor" class="bi bi-rocket-takeoff" viewBox="0 0 16 16"style=color:white>
+							<path d="M9.752 6.193c.599.6 1.73.437 2.528-.362s.96-1.932.362-2.531c-.599-.6-1.73-.438-2.528.361-.798.8-.96 1.933-.362 2.532"/>
+							<path d="M15.811 3.312c-.363 1.534-1.334 3.626-3.64 6.218l-.24 2.408a2.56 2.56 0 0 1-.732 1.526L8.817 15.85a.51.51 0 0 1-.867-.434l.27-1.899c.04-.28-.013-.593-.131-.956a9 9 0 0 0-.249-.657l-.082-.202c-.815-.197-1.578-.662-2.191-1.277-.614-.615-1.079-1.379-1.275-2.195l-.203-.083a10 10 0 0 0-.655-.248c-.363-.119-.675-.172-.955-.132l-1.896.27A.51.51 0 0 1 .15 7.17l2.382-2.386c.41-.41.947-.67 1.524-.734h.006l2.4-.238C9.005 1.55 11.087.582 12.623.208c.89-.217 1.59-.232 2.08-.188.244.023.435.06.57.093q.1.026.16.045c.184.06.279.13.351.295l.029.073a3.5 3.5 0 0 1 .157.721c.055.485.051 1.178-.159 2.065m-4.828 7.475.04-.04-.107 1.081a1.54 1.54 0 0 1-.44.913l-1.298 1.3.054-.38c.072-.506-.034-.993-.172-1.418a9 9 0 0 0-.164-.45c.738-.065 1.462-.38 2.087-1.006M5.205 5c-.625.626-.94 1.351-1.004 2.09a9 9 0 0 0-.45-.164c-.424-.138-.91-.244-1.416-.172l-.38.054 1.3-1.3c.245-.246.566-.401.91-.44l1.08-.107zm9.406-3.961c-.38-.034-.967-.027-1.746.163-1.558.38-3.917 1.496-6.937 4.521-.62.62-.799 1.34-.687 2.051.107.676.483 1.362 1.048 1.928.564.565 1.25.941 1.924 1.049.71.112 1.429-.067 2.048-.688 3.079-3.083 4.192-5.444 4.556-6.987.183-.771.18-1.345.138-1.713a3 3 0 0 0-.045-.283 3 3 0 0 0-.3-.041Z"/>
+							<path d="M7.009 12.139a7.6 7.6 0 0 1-1.804-1.352A7.6 7.6 0 0 1 3.794 8.86c-1.102.992-1.965 5.054-1.839 5.18.125.126 3.936-.896 5.054-1.902Z"/>
+						  </svg>
+					</div>
+					<h4 class="fw-semibold mb-0 text-body-emphasi heads"style=color:black>Dynamic</h4>
+					<p class="text-body-secondar para"style=color:white>Websites don't have to be static, I make pages come to life.</p>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+
+
+	</section>
+
+	<section>
+
+		<div class="container py-4">
+    
+
+   
+
+    <div class="row align-items-md-stretch">
+      <div class="col-md-6">
+        <div class="h-100 p-5 text-bg-dark rounded-3">
+          
+          <p class="paragraph">I value simple content structure, clean design patterns, and thoughtful interactions.I like to code things from scratch, and enjoy bringing ideas to life in the browser.</p>
+          
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="h-100 p-5 bg-body-tertiary border rounded-3">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-">
+						<div class="progress red">
+							<h3 class="progress-title">HTML5</h3>
+							<div class="progress-bar">
+								<div class="progress-value" style="width: 100%;">80%</div>
+							</div>
+						</div>
+			 
+						<div class="progress green">
+							<h3 class="progress-title">CSS3</h3>
+							<div class="progress-bar">
+								<div class="progress-value" style="width: 65%;">65%</div>
+							</div>
+						</div>
+						<div class="progress green">
+							<h3 class="progress-title">CSS3</h3>
+							<div class="progress-bar">
+								<div class="progress-value" style="width: 65%;">65%</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+        </div>
+      </div>
+    </div>
+
+    
+  </div>
+		
+
+
+
+
+	</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<section class="dar">
+	<div class="container py-4">
+		<h1 class="h1 text-center" id="pageHeaderTitle">My progects</h1>
+
+		<article class="postcard dark blue">
+			<a class="postcard__img_link" href="#">
+				<img class="postcard__img" src="./assets/dog copy.jpg" alt="Image Title" />
+			</a>
+			<div class="postcard__text">
+				<h1 class="postcard__title bluE"><a href="#">TINDER FOR DOGS</a></h1>
+				<div class="postcard__subtitle small">
+					<time datetime="2020-05-25 12:00:00">
+						<i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
+					</time>
+				</div>
+				<div class="postcard__bar"></div>
+				<div class="postcard__preview-txt">Eager to make sure our furry friends don't miss out on the Valentine's Day love,This app lets owners create a profile for their dog, showing off breed, age, location and of course, a nice photo....</div>
+				<ul class="postcard__tagbox">
+					
+					<li class="tag__item play blue">
+						<a href="#"><i class="fas fa-play mr-2"></i>watch demo</a>
+					</li>
+				</ul>
+			</div>
+		</article>
+		<article class="postcard dark red">
+			<a class="postcard__img_link" href="#">
+				<img class="postcard__img" src="./assets/progect2.png" alt="Image Title" />	
+			</a>
+			<div class="postcard__text">
+				<h1 class="postcard__title red"><a href="#">looking for new progects</a></h1>
+				<div class="postcard__subtitle small">
+					<time datetime="2020-05-25 12:00:00">
+						<i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
+					</time>
+				</div>
+				<div class="postcard__bar"></div>
+				<div class="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!</div>
+				<ul class="postcard__tagbox">
+					
+					<li class="tag__item play red">
+						<a href="#"><i class="fas fa-play mr-2"></i>watch demo</a>
+					</li>
+				</ul>
+			</div>
+		</article>
+		<article class="postcard dark green">
+			<a class="postcard__img_link" href="#">
+				<img class="postcard__img" src="./assets/progect3.png" alt="Image Title" />
+			</a>
+			<div class="postcard__text">
+				<h1 class="postcard__title green"><a href="#">tinder for dogs homepage</h1>
+				<div class="postcard__subtitle small">
+					<time datetime="2020-05-25 12:00:00">
+						<i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
+					</time>
+				</div>
+				<div class="postcard__bar"></div>
+				<div class="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!</div>
+				<ul class="postcard__tagbox">
+					
+					<li class="tag__item play green">
+						<a href="#"><i class="fas fa-play mr-2"></i>watch demo</a>
+					</li>
+				</ul>
+			</div>
+		</article>
+		
+</section>
+
+
+<section>
+	<footer class="bg-body-tertiary text-center">
+		<!-- Grid container -->
+		<div class="container p-4 pb-0">
+			<h2>are you minding a ptogect? contact me</h2>
+			<h2>whatsapp:874763840495</h2>
+			
+			<p</p>
+		  <!-- Section: Social media -->
+		  <section class="mb-4">
+			<!-- Facebook -->
+			<a
+			data-mdb-ripple-init
+			  class="btn text-white btn-floating m-1"
+			  style="background-color: #3b5998;"
+			  href="#!"
+			  role="button"
+			  ><i class="fab fa-facebook-f"></i
+			></a>
+	  
+			<!-- Twitter -->
+			<a
+			  data-mdb-ripple-init
+			  class="btn text-white btn-floating m-1"
+			  style="background-color: #55acee;"
+			  href="#!"
+			  role="button"
+			  ><i class="fab fa-twitter"></i
+			></a>
+	  
+			<!-- Google -->
+			<a
+			  data-mdb-ripple-init
+			  class="btn text-white btn-floating m-1"
+			  style="background-color: #dd4b39;"
+			  href="#!"
+			  role="button"
+			  ><i class="fab fa-google"></i
+			></a>
+	  
+			<!-- Instagram -->
+			<a
+			  data-mdb-ripple-init
+			  class="btn text-white btn-floating m-1"
+			  style="background-color: #ac2bac;"
+			  href="#!"
+			  role="button"
+			  ><i class="fab fa-instagram"></i
+			></a>
+	  
+			<!-- Linkedin -->
+			<a
+			  data-mdb-ripple-init
+			  class="btn text-white btn-floating m-1"
+			  style="background-color: #0082ca;"
+			  href="#!"
+			  role="button"
+			  ><i class="fab fa-linkedin-in"></i
+			></a>
+			<!-- Github -->
+			<a
+			  data-mdb-ripple-init
+			  class="btn text-white btn-floating m-1"
+			  style="background-color: #333333;"
+			  href="#!"
+			  role="button"
+			  ><i class="fab fa-github"></i
+			></a>
+		  </section>
+		  <!-- Section: Social media -->
+		</div>
+		<!-- Grid container -->
+	  
+		<!-- Copyright -->
+		<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+			developed by me,velika gorica 2024
+		  
+		</div>
+		<!-- Copyright -->
+	  </footer>
+	
+</section>
+
+
+
+
+	
+	
+
+
+	
+    <script async="" src="https://unpkg.com/smoothscroll-polyfill/dist/smoothscroll.min.js"></script>
+
+</body>
+</html>
